@@ -8,7 +8,7 @@ export default function Meme() {
     bottomText: "",
     randomImage: "http://i.imgflip.com/1bij.jpg",
   });
-  const [allMemes, setAllMemes] = React.useState([]);
+  const [allMemes, setAllMemes] = useState([]);
 
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
@@ -34,7 +34,7 @@ export default function Meme() {
   }
 
   return (
-    <main>
+    <div>
       <div className="form">
         <input
           type="text"
@@ -61,6 +61,6 @@ export default function Meme() {
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
       </div>
-    </main>
+    </div>
   );
 }
