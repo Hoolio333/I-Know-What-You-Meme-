@@ -5,16 +5,17 @@
 body {
     font-family: "Karla", sans-serif;
     margin: 0;
+    background-color: rgb(222, 222, 222);
 }
 
 main {
-    padding: 36px;
+    padding: 20px;
 }
 
 .header {
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 200px;
     background: linear-gradient(90deg, rgb(165, 218, 58) 1.18%, #A626D3 100%);
     color: white;
         padding: 20px;
@@ -29,6 +30,7 @@ main {
     .header--title {
         font-size: 4rem;
         margin-right: auto;
+        padding-left: 80px;
     }
     
     .header--project {
@@ -57,22 +59,34 @@ main {
     .form--button {
         grid-column: 1 / -1;
         font-family: "Karla", sans-serif;
-        border-radius: 5px;
-    background: linear-gradient(90deg,#A626D3 1.18%, rgb(165, 218, 58) 100%);
-    color: white;
-    font-size: larger;
+        border-radius: 25px;
+    background: linear-gradient(90deg,#b31131 1.18%, rgb(227, 76, 219) 100%);
+    color: rgb(20, 10, 105);
+    font-size:2.5rem;
+    font-weight: 900;
         border: none;
         cursor: pointer;
+        height: 50px
     }
     
     .meme {
-        position: relative;
+        position: relative;        
     }
     
     .meme--image {
-        max-width: 100%;
+        /* max-width: 100%; */
+        height: 600px;
+        width: 600px;
         border-radius: 3px;
+
     }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
     
     .meme--text {
         position: absolute;
@@ -83,7 +97,7 @@ main {
         margin: 15px 0;
         padding: 0 5px;
         font-family: impact, sans-serif;
-        font-size: 2em;
+        font-size: 4em;
         text-transform: uppercase;
         color: white;
         letter-spacing: 1px;
